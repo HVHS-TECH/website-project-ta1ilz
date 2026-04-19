@@ -1,1 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vikum Hypercars</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- Custom font -->
+  <style>
+    @font-face {
+      font-family: "MyFont";
+      src: url("sansation_light.woff");
+    }
+
+    /* General styling */
+    body {
+      margin: 0;
+      font-family: "MyFont", Arial, sans-serif;
+      background-color: #111;
+      color: #eee;
+    }
+
+    /* Top navigation bar */
+    .topbar {
+      background-color: #000;
+      padding: 15px;
+      text-align: center;
+      border-bottom: 1px solid #444;
+    }
+
+    .topbar a {
+      color: #fff;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .topbar a:hover {
+      color: #ff3333;
+    }
+
+    /* Search form */
+    .topbar form {
+      margin-top: 10px;
+    }
+
+    .topbar input[type="text"] {
+      padding: 6px;
+      width: 200px;
+      background-color: #222;
+      border: 1px solid #555;
+      color: white;
+    }
+
+    .topbar input[type="submit"] {
+      padding: 6px 10px;
+      background-color: #333;
+      border: 1px solid #555;
+      color: white;
+      cursor: pointer;
+    }
+
+    .topbar input[type="submit"]:hover {
+      background-color: #555;
+    }
+
+    /* Main content */
+    .content {
+      text-align: center;
+      padding: 20px;
+    }
+
+    .cars {
+      margin-top: 20px;
+    }
+
+    .cars div {
+      width: 220px;
+      margin: 8px auto;
+      padding: 10px;
+      background-color: #222;
+      border: 1px solid #555;
+    }
+
+    /* Images */
+    img {
+      margin-top: 20px;
+      border: 2px solid #555;
+    }
+
+    /* External links */
+    .links a {
+      display: inline-block;
+      margin: 10px;
+      padding: 8px 12px;
+      background-color: #333;
+      border: 1px solid #555;
+      color: white;
+      text-decoration: none;
+    }
+
+    .links a:hover {
+      background-color: #555;
+    }
+
+    /* Footer */
+    .footer {
+      margin-top: 40px;
+      padding: 15px;
+      text-align: center;
+      background-color: #000;
+      border-top: 1px solid #444;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <div class="topbar">
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="about.html">About</a>
+    </nav>
+
+    <!-- Search bar -->
+    <form action="https://www.google.com/search" method="get" target="_blank">
+      <input type="text" name="q" placeholder="Shrek finder 2.0">
+      <input type="submit" value="Search">
+    </form>
+  </div>
+
+  <!-- Main section -->
+  <div class="content">
+    <h1>Hypercars</h1>
+    <p>This page is about hypercars and some of the fastest cars in the world.</p>
+
+    <h2>Top Hypercars</h2>
+
+    <div class="cars">
+      <div>Bugatti Chiron</div>
+      <div>Koenigsegg Jesko</div>
+      <div>McLaren P1</div>
+      <div>Ferrari LaFerrari</div>
+      <div>Lamborghini Sián</div>
+      <div>Aston Martin Valkyrie</div>
+    </div>
+
+    <!-- Images -->
+    <img src="buggati.jpg" alt="Bugatti Chiron" width="360" height="250">
+    <img src="jesko.jpg" alt="Koenigsegg Jesko" width="360" height="250">
+
+    <!-- Links -->
+    <div class="links">
+      <a href="https://en.wikipedia.org/wiki/Bugatti_Chiron" target="_blank">Bugatti Chiron</a>
+      <a href="https://en.wikipedia.org/wiki/Koenigsegg_Jesko" target="_blank">Koenigsegg Jesko</a>
+    </div>
+
+    <h2>About</h2>
+    <p>I made this page because I like hypercars.</p>
+
+    <h2>Help</h2>
+    <p>Use the search bar above to look up more cars.</p>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>Vikum</p>
+  </div>
+
+</body>
+</html>
