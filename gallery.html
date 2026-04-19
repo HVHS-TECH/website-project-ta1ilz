@@ -77,6 +77,12 @@
       background-color: #222;
       border: 1px solid #555;
       padding: 10px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 15px rgba(255, 0, 0, 0.3);
     }
 
     .card img {
@@ -106,6 +112,22 @@
     }
 
     .card a:hover {
+      background-color: #555;
+    }
+
+    .links {
+      margin-top: 20px;
+    }
+
+    .links a {
+      padding: 8px 12px;
+      background-color: #333;
+      border: 1px solid #555;
+      color: white;
+      text-decoration: none;
+    }
+
+    .links a:hover {
       background-color: #555;
     }
 
@@ -143,51 +165,56 @@
     <div class="gallery">
 
       <div class="card">
-        <img src="buggati.jpg" alt="Bugatti Chiron">
+        <img src="bugatti.jpg" alt="Bugatti Chiron" onerror="this.src='placeholder.jpg'">
         <h3>Bugatti Chiron</h3>
-        <p>Top speed: 490 km/h. Known for luxury and power.</p>
-        <a href="https://en.wikipedia.org/wiki/Bugatti_Chiron" target="_blank">Learn More</a>
+        <p>Top speed: 490 km/h. Known for luxury and extreme power.</p>
+        <a href="https://en.wikipedia.org/wiki/Bugatti_Chiron" target="_blank" rel="noopener noreferrer">Learn More</a>
       </div>
 
       <div class="card">
-        <img src="jesko.jpg" alt="Koenigsegg Jesko">
+        <img src="jesko.jpg" alt="Koenigsegg Jesko" onerror="this.src='placeholder.jpg'">
         <h3>Koenigsegg Jesko</h3>
-        <p>Built for track and top speed records with high end technology.</p>
-        <a href="https://en.wikipedia.org/wiki/Koenigsegg_Jesko" target="_blank">Learn More</a>
+        <p>Built for record-breaking speed and advanced aerodynamics.</p>
+        <a href="https://en.wikipedia.org/wiki/Koenigsegg_Jesko" target="_blank" rel="noopener noreferrer">Learn More</a>
       </div>
 
       <div class="card">
-        <img src="p1.jpg" alt="McLaren P1">
+        <img src="p1.jpg" alt="McLaren P1" onerror="this.src='placeholder.jpg'">
         <h3>McLaren P1</h3>
         <p>Hybrid hypercar combining electric power with a twin-turbo V8.</p>
-        <a href="https://en.wikipedia.org/wiki/McLaren_P1" target="_blank">Learn More</a>
+        <a href="https://en.wikipedia.org/wiki/McLaren_P1" target="_blank" rel="noopener noreferrer">Learn More</a>
       </div>
 
       <div class="card">
-        <img src="laferrari.jpg" alt="Ferrari LaFerrari">
+        <img src="laferrari.jpg" alt="Ferrari LaFerrari" onerror="this.src='placeholder.jpg'">
         <h3>Ferrari LaFerrari</h3>
         <p>Ferrari’s first hybrid hypercar with Formula 1 technology.</p>
-        <a href="https://en.wikipedia.org/wiki/LaFerrari" target="_blank">Learn More</a>
+        <a href="https://en.wikipedia.org/wiki/LaFerrari" target="_blank" rel="noopener noreferrer">Learn More</a>
       </div>
 
       <div class="card">
-        <img src="sian.jpg" alt="Lamborghini Sian">
+        <img src="sian.jpg" alt="Lamborghini Sián" onerror="this.src='placeholder.jpg'">
         <h3>Lamborghini Sián</h3>
-        <p>Futuristic design with supercapacitor hybrid technology.</p>
-        <a href="https://en.wikipedia.org/wiki/Lamborghini_Si%C3%A1n_FKP_37" target="_blank">Learn More</a>
+        <p>Futuristic design with supercapacitor hybrid system.</p>
+        <a href="https://en.wikipedia.org/wiki/Lamborghini_Si%C3%A1n_FKP_37" target="_blank" rel="noopener noreferrer">Learn More</a>
       </div>
 
       <div class="card">
-        <img src="valkyrie.jpg" alt="Aston Martin Valkyrie">
+        <img src="valkyrie.jpg" alt="Aston Martin Valkyrie" onerror="this.src='placeholder.jpg'">
         <h3>Aston Martin Valkyrie</h3>
-        <p>F1-inspired hypercar designed for performance.</p>
-        <a href="https://en.wikipedia.org/wiki/Aston_Martin_Valkyrie" target="_blank">Learn More</a>
+        <p>F1-inspired hypercar built for extreme performance.</p>
+        <a href="https://en.wikipedia.org/wiki/Aston_Martin_Valkyrie" target="_blank" rel="noopener noreferrer">Learn More</a>
       </div>
 
     </div>
 
     <h2>About This Gallery</h2>
     <p>This gallery showcases some of the most advanced hypercars in the world.</p>
+
+    <!-- Back link -->
+    <div class="links">
+      <a href="home.html">⬅ Back to Home</a>
+    </div>
 
   </div>
 
