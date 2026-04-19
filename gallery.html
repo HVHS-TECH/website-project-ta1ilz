@@ -61,74 +61,42 @@
     }
 
     .content {
-      text-align: center;
+      max-width: 1200px;
+      margin: auto;
       padding: 20px;
+      text-align: center;
     }
 
-    /* Gallery grid */
     .gallery {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
       margin-top: 30px;
     }
 
     .card {
-      background-color: #222;
-      border: 1px solid #555;
-      padding: 10px;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-
-    .card:hover {
-      transform: scale(1.03);
-      box-shadow: 0 0 15px rgba(255, 0, 0, 0.3);
+      background-color: #1a1a1a;
+      border: 1px solid #333;
+      padding: 12px;
+      /* removed transition */
     }
 
     .card img {
       width: 100%;
-      height: 180px;
+      aspect-ratio: 16 / 9;
       object-fit: cover;
       border-bottom: 1px solid #555;
     }
 
     .card h3 {
-      margin: 10px 0 5px;
+      margin: 12px 0 6px;
+      font-size: 18px;
     }
 
     .card p {
       font-size: 14px;
-      color: #ccc;
-    }
-
-    .card a {
-      display: inline-block;
-      margin-top: 8px;
-      padding: 6px 10px;
-      background-color: #333;
-      border: 1px solid #555;
-      color: white;
-      text-decoration: none;
-    }
-
-    .card a:hover {
-      background-color: #555;
-    }
-
-    .links {
-      margin-top: 20px;
-    }
-
-    .links a {
-      padding: 8px 12px;
-      background-color: #333;
-      border: 1px solid #555;
-      color: white;
-      text-decoration: none;
-    }
-
-    .links a:hover {
-      background-color: #555;
+      color: #bbb;
+      line-height: 1.4;
     }
 
     .footer {
@@ -143,7 +111,6 @@
 
 <body>
 
-  <!-- Navigation -->
   <div class="topbar">
     <nav>
       <a href="home.html">Home</a>
@@ -157,7 +124,6 @@
     </form>
   </div>
 
-  <!-- Content -->
   <div class="content">
     <h1>Hypercars Gallery</h1>
     <p>Explore some of the fastest and most powerful hypercars ever built.</p>
@@ -168,42 +134,36 @@
         <img src="bugatti.jpg" alt="Bugatti Chiron" onerror="this.src='placeholder.jpg'">
         <h3>Bugatti Chiron</h3>
         <p>Top speed: 490 km/h. Known for luxury and extreme power.</p>
-        <a href="https://en.wikipedia.org/wiki/Bugatti_Chiron" target="_blank" rel="noopener noreferrer">Learn More</a>
       </div>
 
       <div class="card">
         <img src="jesko.jpg" alt="Koenigsegg Jesko" onerror="this.src='placeholder.jpg'">
         <h3>Koenigsegg Jesko</h3>
         <p>Built for record-breaking speed and advanced aerodynamics.</p>
-        <a href="https://en.wikipedia.org/wiki/Koenigsegg_Jesko" target="_blank" rel="noopener noreferrer">Learn More</a>
       </div>
 
       <div class="card">
         <img src="p1.jpg" alt="McLaren P1" onerror="this.src='placeholder.jpg'">
         <h3>McLaren P1</h3>
         <p>Hybrid hypercar combining electric power with a twin-turbo V8.</p>
-        <a href="https://en.wikipedia.org/wiki/McLaren_P1" target="_blank" rel="noopener noreferrer">Learn More</a>
       </div>
 
       <div class="card">
         <img src="laferrari.jpg" alt="Ferrari LaFerrari" onerror="this.src='placeholder.jpg'">
         <h3>Ferrari LaFerrari</h3>
         <p>Ferrari’s first hybrid hypercar with Formula 1 technology.</p>
-        <a href="https://en.wikipedia.org/wiki/LaFerrari" target="_blank" rel="noopener noreferrer">Learn More</a>
       </div>
 
       <div class="card">
         <img src="sian.jpg" alt="Lamborghini Sián" onerror="this.src='placeholder.jpg'">
         <h3>Lamborghini Sián</h3>
         <p>Futuristic design with supercapacitor hybrid system.</p>
-        <a href="https://en.wikipedia.org/wiki/Lamborghini_Si%C3%A1n_FKP_37" target="_blank" rel="noopener noreferrer">Learn More</a>
       </div>
 
       <div class="card">
         <img src="valkyrie.jpg" alt="Aston Martin Valkyrie" onerror="this.src='placeholder.jpg'">
         <h3>Aston Martin Valkyrie</h3>
         <p>F1-inspired hypercar built for extreme performance.</p>
-        <a href="https://en.wikipedia.org/wiki/Aston_Martin_Valkyrie" target="_blank" rel="noopener noreferrer">Learn More</a>
       </div>
 
     </div>
@@ -211,8 +171,10 @@
     <h2>About This Gallery</h2>
     <p>This gallery shows some of the most advanced hypercars in the world.</p>
 
-   <div class="footer">
-    <p>Vikum</p>
+    <div class="footer">
+      <p>Vikum</p>
+    </div>
+
   </div>
 
 </body>
